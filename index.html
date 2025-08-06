@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glow Up</title>
+  <link rel="icon" href="Apresentação - EMPRESA GLOW UP (1).png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">
+        <img src="Apresentação - EMPRESA GLOW UP (1).png" alt="logo_img" width="150">
+      </h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="https://www.instagram.com/glowupskincares/?igsh=bmN6ODY2aDBnc3Fx#a" class="instagram-link" target="_blank">
+        <img src="insta.jpg" alt="Instagram" width="30">
+      </a>
+    </div>
+  </header>
+
+  <section id="home" class="principal">
+    <div class="container">
+      <h2>Sua pele todos os dias, nosso cuidado em todos os momentos. </h2>
+      <p>Produtos de skincare eficazes, acessíveis cuidando sempre de você.</p>
+      <a href="#produtos" class="btn">Conheça nossos produtos</a>
+    </div>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <div class="container">
+      <h3>Nossos Produtos</h3>
+      <div class="cards">
+        <div class="card">
+          <img src="imagem_sabonete.jpg" alt="Sabonete de Glicerina" />
+          <h4>Glow Skin</h4>
+          <p class="resumo">Sabonete glicerinado com extrato de camomila.</p>
+          <div class="descricao-completa">
+            <p>Oferece hidratação profunda, efeito cicatrizante, ação calmante e é indicado para peles sensíveis.</p>
+          </div>
+          <h6>Não testado em animais</h6>
+          <p class="preco">R$ 12,00</p>
+          <button class="btn-toggle" onclick="toggleDescricao(this)">Ver mais</button>
+        </div>
+
+        <div class="card">
+          <img src="imagem_balm.jpg" alt="Balm" />
+          <h4>Lip Glow</h4>
+          <p class="resumo">Textura leve com hidratação profunda.</p>
+          <div class="descricao-completa">
+            <p>Rápida absorção, evita a perda de água que resulta no ressecamento dos lábios, oferece alívio de irritações e evita rachaduras.</p>
+          </div>
+          <h6>Não testado em animais</h6>
+          <p class="preco">R$ 10,00</p>
+          <button class="btn-toggle" onclick="toggleDescricao(this)">Ver mais</button>
+        </div>
+
+        <div class="card">
+          <img src="dupla.png" alt="kit" />
+          <h4>kit Lip Glow e Glow Skin</h4>
+          <p class="resumo">Textura leve com hidratação profunda, combinando os dois produtos para cuidar de si.</p>
+          <div class="descricao-completa">
+            <p>Kit economico com 1 Lip Glow e 1 Glow Skin</p>
+          </div>
+          <h6>Não testado em animais</h6>
+          <p class="preco">R$ 20,00</p>
+          <button class="btn-toggle" onclick="toggleDescricao(this)">Ver mais</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h3>Sobre a Glow Up</h3>
+      <p>
+        Nós somos 6 meninas do terceiro ano do ensino médio, Ana Caroline Ormedilla, Emilly Costa, Fernanda Carvalho, Giovanna Vitória, Maria Eduarda Campos e Mariana Ramos com uma missão: tornar o skincare acessível para todos. Percebemos que cuidar de si mesmo não deveria ser um privilégio, mas sim um direito. Por isso, criamos uma marca que combina eficácia e acessibilidade, provando que é possível ter uma pele linda sem gastar muito.
+        Nossa paixão vai além do cuidado pessoal. Acreditamos que a beleza deve ser gentil com você e com o planeta. Por isso, todos os nossos produtos são pensados com a preservação do meio ambiente em mente. Junte-se a nós nessa jornada e descubra que o autocuidado pode ser simples, eficaz e consciente. Para mais informaçoes acesse nossa proposta!
+      </p>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="container">
+      <h3>Fale Conosco</h3>
+      <div class="contato-info">
+        <p>Telefone: (11) 92774-8317</p>
+        <p>Instagram: <a href="https://www.instagram.com/glowupskincares/?igsh=bmN6ODY2aDBnc3Fx#" target="_blank">@glowup</a></p>
+        <p class="impacto">FAÇA AQUILO QUE VOCÊ PODE, DENTRO DAS CONDIÇÕES QUE VOCÊ TEM!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="https://wa.me/5511999736897" target="_blank" aria-label="WhatsApp">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Ícone do WhatsApp" />
+    </a>
+  </footer>
+
+  <script>
+    function toggleDescricao(btn) {
+      const card = btn.parentElement;
+      card.classList.toggle('open');
+      btn.textContent = card.classList.contains('open') ? 'Ver menos' : 'Ver mais';
+    }
+  </script>
+</body>
+</html>
